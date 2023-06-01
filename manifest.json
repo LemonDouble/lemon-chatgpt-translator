@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "lemon-chatgpt-translator",
+  "version": "0.0.1",
+  "description": "Translates Chatgpt's Prompt to English",
+  "permissions": ["activeTab"],
+  "content_scripts": [{
+    "matches": ["https://chat.openai.com/*"],
+    "js": ["dist/bundle.js"]
+  }]
+}

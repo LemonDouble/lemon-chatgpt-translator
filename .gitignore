@@ -2,4 +2,5 @@
 .env
 .serverless
 .build
+dist
 node_modules
