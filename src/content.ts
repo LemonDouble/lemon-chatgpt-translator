@@ -36,6 +36,9 @@ cloneSubmitButton.addEventListener('click', translateTextfield);
 form.addEventListener('keydown', async function(event) {
   // @ts-ignore
   if (event.key === 'Enter') {
-    await translateTextfield(event)
+    // @ts-ignore
+    if(!event.shiftKey){
+      await translateTextfield(event)
+    }
   }
 });
